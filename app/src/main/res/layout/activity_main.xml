@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:id="@+id/sv_content"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_header"
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="16dp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_header"
+                    style="@style/text_default_header"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/header_launch_information"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_header" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_label_mission_name"
+                    style="@style/text_default_label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_mission_name"
+                    app:layout_constraintEnd_toStartOf="@id/tv_mission_name"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_header" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_mission_name"
+                    style="@style/text_default_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_label_mission_name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/tv_label_mission_name"
+                    app:layout_constraintTop_toTopOf="@id/tv_label_mission_name"
+                    tools:text="Merah Putih" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_label_flight_number"
+                    style="@style/text_default_label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_flight_number"
+                    app:layout_constraintEnd_toStartOf="@id/tv_mission_name"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_label_mission_name" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_flight_number"
+                    style="@style/text_default_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_label_flight_number"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/tv_label_flight_number"
+                    app:layout_constraintTop_toTopOf="@id/tv_label_flight_number"
+                    tools:text="67" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_label_launch_date"
+                    style="@style/text_default_label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_launch_date"
+                    app:layout_constraintEnd_toStartOf="@id/tv_launch_date"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_label_flight_number" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_launch_date"
+                    style="@style/text_default_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_label_launch_date"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/tv_label_launch_date"
+                    app:layout_constraintTop_toTopOf="@id/tv_label_launch_date"
+                    tools:text="28 de Abril" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_label_success"
+                    style="@style/text_default_label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_success"
+                    app:layout_constraintEnd_toStartOf="@id/tv_success"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_label_launch_date" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_success"
+                    style="@style/text_default_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_label_success"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/tv_label_success"
+                    app:layout_constraintTop_toTopOf="@id/tv_label_success"
+                    tools:text="Sim" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_label_details"
+                    style="@style/text_default_label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_details"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_label_success" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_details"
+                    style="@style/text_default_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8sp"
+                    android:textAlignment="textStart"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_label_details"
+                    tools:text="SpaceX's fifteenth flight of 2018 launched the Merah Putih (also known as Telkom-4) geostationary communications satellite for Telkom Indonesia. It marked the first reuse of any Block 5 first stage; the booster B1046 had previously launched Bangabandhu-1. The stage was recovered and is expected to become the first Falcon 9 booster to fly three missions." />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_error"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="32dp"
+            android:visibility="gone"
+            tools:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_label_error"
+                style="@style/text_default_header"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/label_something_wrong"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_error"
+                style="@style/text_default_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="8dp"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_label_error"
+                tools:text="Algo deu errado e não sabemos o que." />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bt_again"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/button_try_again"
+                app:layout_constraintEnd_toEndOf="@+id/tv_error"
+                app:layout_constraintStart_toStartOf="@+id/tv_error"
+                app:layout_constraintTop_toBottomOf="@id/tv_error" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ProgressBar
+            android:id="@+id/pb_loading"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

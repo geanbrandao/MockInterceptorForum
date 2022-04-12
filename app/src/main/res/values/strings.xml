@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Mock Interceptor Forum</string>
+    <string name="header_launch_information">Informações do lançamento</string>
+    <string name="label_mission_name">Nome da missão</string>
+    <string name="label_flight_number">Número do vôo</string>
+    <string name="label_launch_date">Data de lançamento</string>
+    <string name="label_success">Foi um sucesso?</string>
+    <string name="label_details">Detalhes</string>
+    <string name="label_something_wrong">Algo deu errado</string>
+    <string name="button_try_again">Tentar novamente</string>
+</resources>
