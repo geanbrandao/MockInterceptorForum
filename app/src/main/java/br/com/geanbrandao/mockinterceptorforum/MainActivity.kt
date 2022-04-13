@@ -62,7 +62,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun handleSuccess(oneLaunchModel: OneLaunchModel) = with(binding) {
-        Glide.with(this@MainActivity).load(oneLaunchModel.links.flickr_images[0]).into(ivHeader)
+        Glide.with(this@MainActivity)
+            .load(oneLaunchModel.links.flickr_images?.get(0).orEmpty())
+            .error(R.drawable.ic_broken_image)
+            .into(ivHeader)
         tvMissionName.text = oneLaunchModel.mission_name
         tvFlightNumber.text = oneLaunchModel.flight_number.toString()
         tvLaunchDate.text = oneLaunchModel.launch_date_local.substringBefore('T')
