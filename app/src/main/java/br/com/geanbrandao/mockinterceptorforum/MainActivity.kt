@@ -28,7 +28,10 @@ class MainActivity : AppCompatActivity() {
             getOneLaunch(67)
             binding.clError.isVisible = false
         }
-        getOneLaunch(967)
+        binding.btLaunch.setOnClickListener {
+            getOneLaunch(105)
+        }
+        getOneLaunch(67)
     }
 
     private fun getOneLaunch(flightNumber: Int) {
@@ -63,7 +66,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun handleSuccess(oneLaunchModel: OneLaunchModel) = with(binding) {
         Glide.with(this@MainActivity)
-            .load(oneLaunchModel.links.flickr_images?.get(0).orEmpty())
+            .load(oneLaunchModel.links.flickr_images.firstOrNull().orEmpty())
             .error(R.drawable.ic_broken_image)
             .into(ivHeader)
         tvMissionName.text = oneLaunchModel.mission_name
