@@ -1,0 +1,39 @@
+{
+  "reference": "Get launch",
+  "default": -1,
+  "saved_data": [
+    {
+      "description": "Error",
+      "code": 500,
+      "data": {
+        "message": "Algo deu errado aqui no back, chama alguém",
+        "type": "UNEXPECTED_ERROR"
+      }
+    },
+    {
+      "description": "Success launch 67",
+      "code": 200,
+      "data_path": "one_launch_response_67.json"
+    },
+    {
+      "description": "Success launch 105",
+      "code": 200,
+      "data": {
+        "flight_number": 105,
+        "mission_name": "Starlink-14 (v1.0)",
+        "launch_year": "2020",
+        "launch_date_local": "2020-10-24T11:31:00-04:00",
+        "launch_success": true,
+        "links": {
+          "flickr_images": []
+        },
+        "details": "This mission will launch the fourteenth batch of operational Starlink satellites, which are expected to be version 1.0, from SLC-40, Kennedy Space Center. It is the fifteenth Starlink launch overall. The satellites will be delivered to low Earth orbit and will spend a few weeks maneuvering to their operational altitude of 550 km. The booster for this mission is expected to land on JRTI."
+      }
+    },
+    {
+      "description": "Not found",
+      "code": 404,
+      "is_unit": true
+    }
+  ]
+}

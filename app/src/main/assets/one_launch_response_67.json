@@ -1,0 +1,20 @@
+{
+  "flight_number": 67,
+  "mission_name": "Merah Putih",
+  "launch_date_local": "2018-08-07T01:18:00-04:00",
+  "rocket": {
+    "rocket_name": "Falcon 9"
+  },
+  "launch_success": true,
+  "links": {
+    "flickr_images": [
+      "https://farm2.staticflickr.com/1798/43862495212_8fe1688c4b_o.jpg",
+      "https://farm1.staticflickr.com/935/43006330655_f1623a3fa1_o.jpg",
+      "https://farm1.staticflickr.com/938/28974313177_d16381ff5f_o.jpg",
+      "https://farm2.staticflickr.com/1780/43006334045_fb7b4a8714_o.jpg",
+      "https://farm1.staticflickr.com/929/28974335747_ffd87ff274_o.jpg",
+      "https://farm1.staticflickr.com/930/30041972208_f735b9690b_o.jpg"
+    ]
+  },
+  "details": "SpaceX's fifteenth flight of 2018 launched the Merah Putih (also known as Telkom-4) geostationary communications satellite for Telkom Indonesia. It marked the first reuse of any Block 5 first stage; the booster B1046 had previously launched Bangabandhu-1. The stage was recovered and is expected to become the first Falcon 9 booster to fly three missions."
+}
