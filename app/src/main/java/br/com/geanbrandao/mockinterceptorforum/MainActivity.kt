@@ -28,7 +28,10 @@ class MainActivity : AppCompatActivity() {
             getOneLaunch(67)
             binding.clError.isVisible = false
         }
-        getOneLaunch(967)
+        binding.btLaunch.setOnClickListener {
+            getOneLaunch(105)
+        }
+        getOneLaunch(67)
     }
 
     private fun getOneLaunch(flightNumber: Int) {
