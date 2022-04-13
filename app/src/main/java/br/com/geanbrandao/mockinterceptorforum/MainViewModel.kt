@@ -41,6 +41,7 @@ class MainViewModel : ViewModel() {
             }
             is HttpException -> {
                 when (e.code()) {
+                    500 -> NetworkErrorException.parseException(e)
                     502 -> NetworkErrorException(e.code(),  "Internal error!")
                     404 -> NetworkErrorException(e.code(), "Path not found!")
                     400 -> NetworkErrorException.parseException(e)
